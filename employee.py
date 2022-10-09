@@ -4,7 +4,7 @@
 class Employee:
 
 
-    def __init__(self, name, contract, commission, contractPay, commissionPay = 0, hoursWorked =0, contractsLanded = 0):
+    def __init__(self, name, contract, commission, contractPay, commissionPay = 0, hoursWorked = 0, contractsLanded = 0):
         self.name = name
         self.contract = contract
         self.commission = commission
@@ -40,7 +40,7 @@ class Employee:
         else:
             return self.contractPay * self.hoursWorked
 
-    def getCommisionPay();
+    def getCommisionPay():
         if self.commission == Commission.NONE:
             return 0
         elif self.commission == Commission.FIXED:
