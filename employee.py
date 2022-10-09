@@ -15,6 +15,25 @@ class Employee:
         self.hoursWorked = hoursWorked
         self.contractsLanded = contractsLanded
 
+
+    def get_pay(self):
+        return self.getContractPay() + self.getCommisionPay()
+
+    def getContractPay(self):
+        if self.contract == Contract.MONTHLY:
+            return self.contractPay
+        elif:
+            return self.contractPay * self.hoursWorked
+
+    def getCommisionPay(self):
+        if self.commission == Commission.NONE:
+            return 0
+        elif self.commission == Commission.FIXED:
+            return self.commissionPay
+        elif self.commission == Commission.PERCONTRACT:
+            return self.commissionPay * self.contractsLanded
+
+
     def __str__(self):
         output = self.name + " works on a "
         if self.contract == Contract.MONTHLY:
@@ -33,33 +52,15 @@ class Employee:
         return output
 
 
-    def get_pay(self):
-        return self.getContractPay() + self.getCommisionPay()
-
-    def getContractPay(self):
-        if self.contract == Contract.MONTHLY:
-            return self.contractPay
-        else:
-            return self.contractPay * self.hoursWorked
-
-    def getCommisionPay(self):
-        if self.commission == Commission.NONE:
-            return 0
-        elif self.commission == Commission.FIXED:
-            return self.commissionPay
-        elif self.commission == Commission.PERCONTRACT:
-            return self.commissionPay * self.contractsLanded
-
-
 class Contract(Enum):
-    MONTHLY = 0
-    HOURLY = 1
+    MONTHLY = 1
+    HOURLY = 2
 
 
 class Commission(Enum):
-    NONE = 0
-    FIXED = 1
-    PERCONTRACT = 2
+    NONE = 1
+    FIXED = 2
+    PERCONTRACT = 3
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
