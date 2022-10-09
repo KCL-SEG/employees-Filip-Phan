@@ -56,7 +56,7 @@ class Contract(Enum):
     HOURLY = 1
 
 
-class Commission(ENUM):
+class Commission(Enum):
     NONE = 0
     FIXED = 1
     PERCONTRACT = 2
