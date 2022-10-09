@@ -22,7 +22,7 @@ class Employee:
     def getContractPay(self):
         if self.contract == Contract.MONTHLY:
             return self.contractPay
-        elif:
+        elif self.contract == Contract.HOURLY:
             return self.contractPay * self.hoursWorked
 
     def getCommisionPay(self):
