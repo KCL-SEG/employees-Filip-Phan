@@ -1,6 +1,8 @@
 """Employee pay calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+from enum import Enum
+
 class Employee:
 
 
