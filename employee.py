@@ -6,7 +6,7 @@ from enum import Enum
 class Employee:
 
 
-    def __init__(self, name, contract, commission, contractPay, commissionPay = 0, hoursWorked = 0, contractsLanded = 0):
+    def __init__(self, name, contract, commission, contractPay = 0, commissionPay = 0, hoursWorked = 0, contractsLanded = 0):
         self.name = name
         self.contract = contract
         self.commission = commission
@@ -20,7 +20,7 @@ class Employee:
         if self.contract == Contract.MONTHLY:
             output += "montly salary of " + str(self.contractPay)
         elif self.contract == Contract.HOURLY:
-            output += "contract of " + str(self.hours_worked) + " hours at " + str(self.contractPay) + "/hour"
+            output += "contract of " + str(self.hoursWorked) + " hours at " + str(self.contractPay) + "/hour"
 
         if self.commission == Commission.FIXED:
             output += " and receives a bonus commission of " + str(self.commissionPay)
