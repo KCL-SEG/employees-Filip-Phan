@@ -64,19 +64,19 @@ class Commission(Enum):
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
-billie = Employee('Billie', Contract.MONTHLY, Commission.NONE, contractPay = 4000)
+billie = Employee('Billie', Contract.MONTHLY, Commission.NONE, 4000)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
-charlie = Employee('Charlie', Contract.HOURLY, Commission.NONE, contractPay = 25, hoursWorked = 100)
+charlie = Employee('Charlie', Contract.HOURLY, Commission.NONE, 25, hoursWorked = 100)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
-renee = Employee('Renee', Contract.MONTHLY, Commission.PERCONTRACT, contractPay = 3000, commissionPay = 200, contractsLanded = 4)
+renee = Employee('Renee', Contract.MONTHLY, Commission.PERCONTRACT, 3000, commissionPay = 200, contractsLanded = 4)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = Employee('Jan', Contract.HOURLY, Commission.PERCONTRACT, contractPay = 25, hoursWorked =150, commissionPay = 220, contractsLanded = 3)
+jan = Employee('Jan', Contract.HOURLY, Commission.PERCONTRACT, 25, hoursWorked =150, commissionPay = 220, contractsLanded = 3)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
-robbie = Employee('Robbie', Contract.MONTHLY, Commission.FIXED, contractPay = 2000, commissionPay = 1500)
+robbie = Employee('Robbie', Contract.MONTHLY, Commission.FIXED, 2000, commissionPay = 1500)
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
-ariel = Employee('Ariel', Contract.HOURLY, Commission.FIXED, contractPay = 30, hoursWorked = 120, commissionPay = 600)
+ariel = Employee('Ariel', Contract.HOURLY, Commission.FIXED, 30, hoursWorked = 120, commissionPay = 600)
