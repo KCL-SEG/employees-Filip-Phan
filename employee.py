@@ -37,7 +37,7 @@ class Employee:
     def __str__(self):
         output = self.name + " works on a "
         if self.contract == Contract.MONTHLY:
-            output += "montly salary of " + str(self.contractPay)
+            output += "monthly salary of " + str(self.contractPay)
         elif self.contract == Contract.HOURLY:
             output += "contract of " + str(self.hoursWorked) + " hours at " + str(self.contractPay) + "/hour"
 
@@ -73,7 +73,7 @@ charlie = Employee('Charlie', Contract.HOURLY, Commission.NONE, 25, hoursWorked 
 renee = Employee('Renee', Contract.MONTHLY, Commission.PERCONTRACT, 3000, commissionPay = 200, contractsLanded = 4)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = Employee('Jan', Contract.HOURLY, Commission.PERCONTRACT, 25, hoursWorked =150, commissionPay = 220, contractsLanded = 3)
+jan = Employee('Jan', Contract.HOURLY, Commission.PERCONTRACT, 25, hoursWorked = 150, commissionPay = 220, contractsLanded = 3)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee('Robbie', Contract.MONTHLY, Commission.FIXED, 2000, commissionPay = 1500)
